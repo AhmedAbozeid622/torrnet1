@@ -6,4 +6,4 @@ docker run -d -p 3000:3000 -v /path/to/my/downloads:/downloads jpillora/cloud-to
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 unzip ngrok-stable-linux-amd64.zip
 ./ngrok authtoken 1oXHtzXSonXVjMNm0Zck3RZeCjp_4CWQjtkFRqoz1Q7Gtrgz6
-./ngrok http 3000
+./ngrok http 3000 > /dev/null &
