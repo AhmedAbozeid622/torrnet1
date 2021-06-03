@@ -1,5 +1,5 @@
-apt-get install sudo -y
 apt-get update -y 
+apt-get install sudo -y
 sudo apt-get install software-properties-common -y 
 sudo add-apt-repository ppa:deadsnakes/ppa -y 
 sudo apt-get update
