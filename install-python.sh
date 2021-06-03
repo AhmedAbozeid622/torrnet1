@@ -39,7 +39,7 @@ python3.6 ngrok.py
 
 ### Start tmux for Session for background work ###
 sudo apt-get install tmux -y
-tmux
+cd /root && tmux
 # Run start.sh in him
 
 
