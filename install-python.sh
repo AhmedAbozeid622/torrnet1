@@ -27,14 +27,14 @@ req = requests.get('http://127.0.0.1:4040/api/tunnels')
 req = req.json()
 print('Ngrok-Url-Is: ', req['tunnels'][0]['public_url'])
 
-" > ngrok.py  
+" > /root/ngrok.py  
 
 ### (start code) ###
 echo "jupyter notebook </dev/null &>/dev/null &  ### in the backend
 nohup ./ngrok http 8888 &>/dev/null &
 clear
-python3.6 ngrok.py 
-" > start.sh && chmod +x start.sh
+python3.6 /root/ngrok.py 
+" > /root/start.sh && chmod +x /root/start.sh
 
 
 ### Start tmux for Session for background work ###
