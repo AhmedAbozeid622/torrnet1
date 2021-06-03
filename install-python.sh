@@ -39,11 +39,12 @@ nohup ./ngrok http 8888 &>/dev/null &
 clear
 python3.6 /root/ngrok.py 
 " > /root/start.sh && chmod +x /root/start.sh
+cd /root && ./start.sh
 
 
 ### Start tmux for Session for background work ###
-sudo apt-get install tmux -y
-cd /root && tmux
+# sudo apt-get install tmux -y
+# cd /root && tmux
 # Run start.sh in him
 
 
