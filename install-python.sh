@@ -23,7 +23,7 @@ import requests
 import json
 import time
 
-time.sleep(5)
+time.sleep(3)
 req = requests.get('http://127.0.0.1:4040/api/tunnels')
 req = req.json()
 print('Ngrok-Url-Is: ', req['tunnels'][0]['public_url'])
@@ -34,7 +34,7 @@ print('Ngrok-Url-Is: ', req['tunnels'][0]['public_url'])
 echo "
 unzip /root/ngrok-stable-linux-amd64.zip
 /root/ngrok authtoken 1nQmkjYRvHxcSCQIlhrDBtxenYD_3pZ5g3KjUuVHeLaYn9R9G
-nohup jupyter notebook </dev/null &>/dev/null & 
+nohup jupyter notebook --allow-root </dev/null &>/dev/null & 
 nohup ./ngrok http 8888 &>/dev/null &
 clear
 python3.6 /root/ngrok.py 
