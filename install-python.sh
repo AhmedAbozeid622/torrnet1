@@ -17,8 +17,30 @@ echo "c.NotebookApp.allow_remote_access = True" >>  /root/.jupyter/jupyter_noteb
 jupyter notebook password # Must enter password
 
 
-### (Optional) ###
-# jupyter notebook </dev/null &>/dev/null &  ### in the backend
-# nohup ./ngrok http 8888 &>/dev/null &
+### Ngrok url with python ###
+sudo pip install requests
+echo "
+import requests 
+import json
+
+req = requests.get('http://127.0.0.1:4040/api/tunnels')
+req = req.json()
+print('Ngrok-Url-Is: ', req['tunnels'][0]['public_url'])
+
+" > ngrok.py  
+
+### (start code) ###
+echo "jupyter notebook </dev/null &>/dev/null &  ### in the backend
+nohup ./ngrok http 8888 &>/dev/null &
+clear
+python3.6 ngrok.py 
+" > start.sh && chmod +x start.sh
+
+
+### Start tmux for Session for background work ###
+sudo apt-get install tmux -y
+tmux
+# Run start.sh in him
+
 
 
