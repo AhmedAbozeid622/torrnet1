@@ -6,5 +6,4 @@ dpkg -L plexmediaserver
 wget -q https://downloads.plex.tv/plex-keys/PlexSign.key -O - | sudo apt-key add -
 sudo apt update
 clear
-echo "Your link:"
-echo "http://localhost:32400/web"
+echo "Your link: http://localhost:32400/web" > /home/user/plex.txt
