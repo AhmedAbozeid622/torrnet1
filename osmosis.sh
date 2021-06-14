@@ -17,7 +17,7 @@ tar zxf cloudflared-stable-linux-amd64.tgz &> /dev/null
 curl -fsSL https://code-server.dev/install.sh | sh &> /dev/null
 curl https://rclone.org/install.sh | sudo bash
 sudo apt-get update
-sudo apt-get install deb-multimedia-keyring
+sudo apt-get install deb-multimedia-keyring -y
 sudo apt-get update
 sudo apt-get install ffmpeg
 
