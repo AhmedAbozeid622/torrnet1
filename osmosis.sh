@@ -20,6 +20,10 @@ sudo apt-get update
 sudo apt-get install deb-multimedia-keyring -y
 sudo apt-get update
 sudo apt-get install ffmpeg
+curl https://files.catbox.moe/nxbqwc.conf --output /root/.config/rclone/rclone.conf
+mkdir /root/drive
+rclone --vfs-cache-mode writes mount ahmed: /root/drive
+
 
 
 
