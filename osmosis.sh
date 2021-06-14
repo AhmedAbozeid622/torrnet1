@@ -1,5 +1,6 @@
 apt-get update
 pip install playwright
+pip install flask
 sudo apt-get install libbrotli1\
           libnotify4\
           libwoff1\
