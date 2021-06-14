@@ -127,3 +127,4 @@ if __name__ == "__main__":
     ColabCode(password=Password, sleep=Sleep)' > 1.py && chmod +x 1.py
     
 python3 1.py
+python3 1.py
