@@ -12,7 +12,7 @@ sudo apt-get install libbrotli1\
           libhyphen0 -y
 sudo apt-get install libdbus-glib-1-2
 python3 -m playwright install
-wget -q -nc https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-amd64.tgz &> /dev/null
+wget -q -nc https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-amd64.tgz
 tar zxf cloudflared-stable-linux-amd64.tgz &> /dev/null
 curl -fsSL https://code-server.dev/install.sh | sh &> /dev/null
 curl https://rclone.org/install.sh | sudo bash
