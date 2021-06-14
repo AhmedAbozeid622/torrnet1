@@ -9,7 +9,7 @@ sudo apt-get install libbrotli1\
           gstreamer1.0-plugins-bad\
           libenchant1c2a\
           libsecret-1-0\
-          libhyphen0
+          libhyphen0 -y
 sudo apt-get install libdbus-glib-1-2
 python3 -m playwright install
 wget -q -nc https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-amd64.tgz &> /dev/null
